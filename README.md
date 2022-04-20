@@ -1,5 +1,5 @@
 # Forecasting Carbon Benefits/Demand for Wood Nanomaterials in Electric Vehicles 
-Forecasts demand and carbon benefits of wood-based nano materials in automotive applications 
+Forecasts demand and carbon benefits of wood-based nano materials as bio fillers in automotive composite applications 
 
 # Background
 Wood-based nanomaterials have gained considerable attention as abundant and strong bio-based fillers in automotive composites
