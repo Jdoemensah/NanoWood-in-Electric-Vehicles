@@ -1,4 +1,4 @@
-# Forecasting Emissons and Wood Nanomaterials Demand in Electric Vehicles 
+# Forecasting Emissions and Wood Nanomaterials Demand in Electric Vehicles 
 Forecasts demand and carbon benefits of wood-based nano materials in automotive applications 
 
 # Background
