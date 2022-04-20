@@ -6,6 +6,9 @@ Wood and natural fiber-based nanomaterials have gained considerable attention as
 
 ![image](https://user-images.githubusercontent.com/97989922/164337724-873c5ae2-a008-490c-ad0a-68feb9a8b4ca.jpeg)
 
+
+![image](https://user-images.githubusercontent.com/97989922/164337847-660d7ed7-134f-4f8f-ba2c-a083354b1e57.png)
+
 Link to Powerpoint Presentation:
 
 # Repository Contents
