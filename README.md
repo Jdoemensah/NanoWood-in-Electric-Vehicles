@@ -3,6 +3,7 @@ Forecasts carbon benefits and demand for wood-based nano materials as bio filler
 
 # Background
 Wood and natural fiber-based nanomaterials have gained considerable attention as promising alternatives to pretroluem-derived products in automotive applications. Wood-based nanomaterials are abundant, readily available and exhibit high strength properties as bio-based fillers in composites. Adoption of new materials and technology in the automotive industry is challenging. While techincal factors such as product property, market demand and profitability are important for adoptability, information on product sustainability and environmental stewardship has also become critical. Here, U.S. vehicle use and emissions data is used to forecast carbon benefits and demand of wood-based nanomaterials as sustainable alternatives in automobile application.
+![image](https://user-images.githubusercontent.com/97989922/164335419-1f9ef563-c94d-4af5-9da3-c192393c0f01.jpeg)
 
 Link to Powerpoint Presentation:
 
