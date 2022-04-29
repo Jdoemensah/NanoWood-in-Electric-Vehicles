@@ -35,6 +35,6 @@ This repository contains the foollowing:
 
 Vehicle Registrations in NYS: https://data.ny.gov/Transportation/Vehicle-Snowmobile-and-Boat-Registrations/w4pv-hbkt 
 
-Emissions in NYS: 
+Vehicle Miles Travelled in NYS (NYS Department of Transportation): https://www.dot.ny.gov/divisions/engineering/technical-services/hds-respository
 
-
+C02 Emissions Coefficients (US Energy Information Administration): https://www.eia.gov/environment/emissions/co2_vol_mass.php
