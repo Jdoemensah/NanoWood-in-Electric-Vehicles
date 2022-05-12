@@ -29,6 +29,7 @@ This repository contains the foollowing:
 
 
 # Findings
+![image](https://user-images.githubusercontent.com/97989922/167980046-b7999b1f-22ec-44d3-b8a0-1e99f8f84e3e.png)
 
 
 # Data Sources
