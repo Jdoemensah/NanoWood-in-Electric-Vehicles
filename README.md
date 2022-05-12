@@ -11,7 +11,7 @@ https://www.bioplasticsmagazine.com/en/news/meldungen/20160411-BASF-binder-makes
 
 ![image](https://user-images.githubusercontent.com/97989922/164337847-660d7ed7-134f-4f8f-ba2c-a083354b1e57.png)
 
-Link to Powerpoint Presentation:
+Link to Powerpoint Presentation: https://docs.google.com/presentation/d/1PqSey6QloUybhdJ7UAzEwtmWbXbahbn3/edit?usp=sharing&ouid=110213497842636262125&rtpof=true&sd=true
 
 # Repository Contents
 This repository contains the following:
@@ -55,6 +55,7 @@ IMPORTANT: These results are based on only 100,000 queried "gas" "VEH" vehciles 
 
 # Findings
 Top Ten Vehicle Registrations and CO2 Emissions by county in NYS
+
 As shown in the figure below, the results show that out of the queried 100,000 gasoline vehicles queried in New York State, Nassau county recorded the higest vehicle registrations. Bronx county had the 10th higehst vehicle registrations. On emissions however, Suffulk county recorded highest with Orange county in the 10th highest C02 emissions based on this estimates. It is also noteworthy that Onondaga county was not among the top vehicle registrations in the state but is among the top ten counties with higest emissions. 
 
 ![image](https://user-images.githubusercontent.com/97989922/167980046-b7999b1f-22ec-44d3-b8a0-1e99f8f84e3e.png)
@@ -62,6 +63,7 @@ As shown in the figure below, the results show that out of the queried 100,000 g
 
 
 Heatmap of Emission by County
+
 QGIS was used to create a heatmap of vehicle registrations and CO2 emissions by county. this was possible by merging vehicles miles travelled data and vehilce registrations data onto NYS county shapefiles. Using a heatmap of 5 classes, the heatmap trends look similar for both registations and emissions.
 
 ![CO2_1](https://user-images.githubusercontent.com/97989922/167983461-4083c443-e4ae-4046-be2b-3eb457c2039d.png)
