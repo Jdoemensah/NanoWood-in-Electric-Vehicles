@@ -16,9 +16,9 @@ Link to Powerpoint Presentation:
 # Repository Contents
 This repository contains the foollowing:
 
-Input files folder which contains raw and uncleaned data. 
-    1.1 _Vehicle_Miles_of_Travel_2017_2018.xlsx_ : an axcell database of vehicle miles traveled in New York State by county
-    1.2 _cb_2019_us_county_500k_36.zip_ " a zip shapefile of New York State counties
+Input files folder which contains raw and uncleaned data.
+1.1 _Vehicle_Miles_of_Travel_2017_2018.xlsx_ : an axcell database of vehicle miles traveled in New York State by county
+1.2 _cb_2019_us_county_500k_36.zip_ " a zip shapefile of New York State counties
     
  A python script(forecast.py) which cleans data, runs analysis and generate output files. 
  
