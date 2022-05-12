@@ -11,7 +11,7 @@ https://www.bioplasticsmagazine.com/en/news/meldungen/20160411-BASF-binder-makes
 
 ![image](https://user-images.githubusercontent.com/97989922/164337847-660d7ed7-134f-4f8f-ba2c-a083354b1e57.png)
 
-Link to Powerpoint Presentation:
+Link to Powerpoint Presentation: https://docs.google.com/presentation/d/1PqSey6QloUybhdJ7UAzEwtmWbXbahbn3/edit?usp=sharing&ouid=110213497842636262125&rtpof=true&sd=true
 
 # Repository Contents
 This repository contains the following:
