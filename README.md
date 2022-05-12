@@ -14,23 +14,29 @@ https://www.bioplasticsmagazine.com/en/news/meldungen/20160411-BASF-binder-makes
 Link to Powerpoint Presentation:
 
 # Repository Contents
-This repository contains the foollowing:
+This repository contains the following:
 
-Input files folder which contains raw and uncleaned data.
+1. Input files folder which contains raw and uncleaned data.
 
 _Vehicle_Miles_of_Travel_2017_2018.xlsx_ is an axcell database of vehicle miles traveled in New York State by county
 
 _cb_2019_us_county_500k_36.zip_ is a zip shapefile of New York State counties
     
- A python script(forecast.py) which cleans data, runs analysis and generate output files. 
+2.  A python script(forecast.py) which cleans data, runs analysis and generate output files. 
  
- An output folder which contains cleaned data and result outputs
- 	3.1 _both.csv_ : clean data which is a merged data on vehicle registrations and vehicle miles travelled by county
-    3.2 _counties.gpkg_ :geopackage file with vehicle registration and miles travelled and shapefile for each county 
-    3.3 _top_10.png_ : barplot of top ten vehicle registrations and CO2 emissions by county 
-    3.4 _vehicles_by_county_ : heatmap of vehilce registrations by county
-    3.5 _CO2_1_ : Heatmap of carbon emissons by county
-    3.6._CO2_2_ : Heatmap of carbon emissons by county at 60% volume reduction (assumped from natural fiber composites ultimum use)
+3.  An output folder which contains cleaned data and result outputs
+4.  
+ _both.csv_ is a clean data which is a merged data on vehicle registrations and vehicle miles travelled by county
+
+_counties.gpkg_ is a geopackage file with vehicle registration and miles travelled and shapefile for each county 
+
+_top_10.png_ is a barplot of top ten vehicle registrations and CO2 emissions by county 
+
+_vehicles_by_county_ is a heatmap of vehilce registrations by county
+
+_CO2_1_ is a heatmap of carbon emissons by county
+
+_CO2_2_ is a heatmap of carbon emissons by county at 60% volume reduction (assumped from natural fiber composites ultimum use)
 
 
 
