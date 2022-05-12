@@ -15,21 +15,36 @@ Link to Powerpoint Presentation:
 
 # Repository Contents
 This repository contains the foollowing:
-1. Input files folder which contains raw and cleaned data. 
-2. Two scripts which run analysis and generate output files. 
-3. Output files folder: This contains copies of all output files generated from the anaysis
+1. Input files folder which contains raw and uncleaned data. 
+2. An output folder which contains cleaned data and outputs. 
+3. A python script(forecast.py) which cleans data, runs analysis and generate output files. 
+4. Output files folder: This contains copies of all output files generated from the anaysis
 
 # How to Use This Repository
-1. Download data from web..
-2. 
+1. Download appropriate data from web.
+2. Clone and run python script (forecast.py) to generate outputs
+3. Refer to appropriate literature to interprete output results
 
-# Vehicle Emissions Analysis
+# Vehicle Registrations and Emissions Analysis
 
-# Wood nanomaterials demand analysis
+# The US national MPG average of 25 milesper gallon was used as baseline for this analysis.
+Additionally, the CO2 federal emissions constant of EC = 19.37 per unit of volume/mass of vehicle was used to estimate Co2 emissions base on reported vehicle's unladen weight and volume for counties in New York State. 
+IMPORTANT: These results are based on only 100,000 queried "gas" "VEH" vehciles as classified by the NY DMV in New York State as at 05/11/2022. This will be expanded to capture true results for gasoline vehiles in all 12.4 Million vehicle registrations reported in New York State in April, 2022.
 
 
 # Findings
+Top Ten Vehicle Registrations and CO2 Emissions by county in NYS
+As shown in the figure below, the results show that out of the queried 100,000 gasoline vehicles queried in New York State, Nassau county recorded the higest vehicle registrations. Bronx county had the 10th higehst vehicle registrations. On emissions however, Suffulk county recorded highest with Orange county in the 10th highest C02 emissions based on this estimates. It is also noteworthy that Onondaga county was not among the top vehicle registrations in the state but is among the top ten counties with higest emissions. 
+![image](https://user-images.githubusercontent.com/97989922/167980046-b7999b1f-22ec-44d3-b8a0-1e99f8f84e3e.png)
 
+Heatmap of Emission by County
+QGIS was used to create a heatmap of vehicle registrations and CO2 emissions by county. this was possible by merging vehicles miles travelled data and vehilce registrations data onto NYS county shapefiles. Using a heatmap of 5 classes, the heatmap trends look similar for both registations and emissions.
+![CO2_1](https://user-images.githubusercontent.com/97989922/167983461-4083c443-e4ae-4046-be2b-3eb457c2039d.png)
+
+# Future Work
+
+1. Acount for all 12.4 million vehicle registrations in New York State.
+2. Reduce emission assumptions such as the assumed vehicle volume reductions to make better estimates
 
 # Data Sources
 

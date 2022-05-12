@@ -166,6 +166,7 @@ nys_mt['VMT/10000']=nys_mt['VMT/1000'].astype(int)
 
 t_counties = nys_mt['county'].value_counts()
 print(len(t_counties))
+<<<<<<< HEAD
 #62 COUNTIES RECORDED. 
 
 #%%Group nys_mt by county to have 62 counties in dataframe
@@ -281,3 +282,6 @@ fig.tight_layout()
 fig.savefig("top_10.png")
 
 #%%E.N.D
+=======
+#62 COUNTIES RECORDED. 
+>>>>>>> 4d50498a733b50d37502f1bd6ff17221c41369f2
