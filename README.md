@@ -25,7 +25,7 @@ _cb_2019_us_county_500k_36.zip_ is a zip shapefile of New York State counties
  A python script(forecast.py) which cleans data, runs analysis and generate output files. 
  
  An output folder which contains cleaned data and result outputs
-    3.1 _both.csv_ : clean data which is a merged data on vehicle registrations and vehicle miles travelled by county
+ 	3.1 _both.csv_ : clean data which is a merged data on vehicle registrations and vehicle miles travelled by county
     3.2 _counties.gpkg_ :geopackage file with vehicle registration and miles travelled and shapefile for each county 
     3.3 _top_10.png_ : barplot of top ten vehicle registrations and CO2 emissions by county 
     3.4 _vehicles_by_county_ : heatmap of vehilce registrations by county
