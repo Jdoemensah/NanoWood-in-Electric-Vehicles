@@ -43,8 +43,8 @@ QGIS was used to create a heatmap of vehicle registrations and CO2 emissions by 
 
 # Future Work
 
-1. Acount for all 12.4 million vehicle registrations in New York State.
-2. Reduce emission assumptions such as the assumed vehicle volume reductions to make better estimates
+1. Extend query to account for all gasoline "VEH" veicles in all 12.4 million vehicle registrations in New York State.
+2. Reduce C02 emission estimate assumptions by including more parameters to make better estimates
 
 # Data Sources
 
