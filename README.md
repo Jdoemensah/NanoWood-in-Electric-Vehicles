@@ -59,6 +59,8 @@ As shown in the figure below, the results show that out of the queried 100,000 g
 
 ![image](https://user-images.githubusercontent.com/97989922/167980046-b7999b1f-22ec-44d3-b8a0-1e99f8f84e3e.png)
 
+
+
 Heatmap of Emission by County
 QGIS was used to create a heatmap of vehicle registrations and CO2 emissions by county. this was possible by merging vehicles miles travelled data and vehilce registrations data onto NYS county shapefiles. Using a heatmap of 5 classes, the heatmap trends look similar for both registations and emissions.
 
