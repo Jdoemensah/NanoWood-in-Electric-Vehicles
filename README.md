@@ -49,14 +49,14 @@ _CO2_2_ is a heatmap of carbon emissons by county at 60% volume reduction (assum
 
 # Vehicle Registrations and Emissions Analysis
 
-# The US national MPG average of 25 milesper gallon was used as baseline for this analysis.
-Additionally, the CO2 federal emissions constant of EC = 19.37 per unit of volume/mass of vehicle was used to estimate Co2 emissions base on reported vehicle's unladen weight and volume for counties in New York State. 
-IMPORTANT: These results are based on only 100,000 queried "gas" "VEH" vehciles as classified by the NY DMV in New York State as at 05/11/2022. This will be expanded to capture true results for gasoline vehiles in all 12.4 Million vehicle registrations reported in New York State in April, 2022.
+The US national MPG average of 25 miles per gallon was used as baseline for this analysis.
+The federal CO2 emissions constant of EC = 19.37 per unit of volume/mass of vehicle was used to estimate CO2 emissions based on reported vehicle's unladen weight for all counties in New York State. 
+IMPORTANT: These results are based on "gas" "VEH" vehciles as classified by the NY DMV in New York State as at 05/11/2022. The query was called on all 12.4 Million vehicle registrations reported in New York State as at April, 2022.
 
 # Findings
 Top Ten Vehicle Registrations and CO2 Emissions by county in NYS
 
-As shown in the figure below, the results show that out of the queried 100,000 gasoline vehicles queried in New York State, Nassau county recorded the higest vehicle registrations. Bronx county had the 10th higehst vehicle registrations. On emissions however, Suffulk county recorded highest with Orange county in the 10th highest C02 emissions based on this estimates. It is also noteworthy that Onondaga county was not among the top vehicle registrations in the state but is among the top ten counties with higest emissions. 
+As shown in the figure below, the results show that Suffolk county recorded the higest vehicle registrations. Bronx county had the 10th higehst vehicle registrations. On emissions, Suffulk county recorded highest withBronx county in the 10th highest C02 emissions based on this estimates. 
 
 ![image](https://user-images.githubusercontent.com/97989922/167980046-b7999b1f-22ec-44d3-b8a0-1e99f8f84e3e.png)
 
@@ -70,8 +70,7 @@ QGIS was used to create a heatmap of vehicle registrations and CO2 emissions by 
 
 # Future Work
 
-1. Extend query to account for all gasoline "VEH" veicles in all 12.4 million vehicle registrations in New York State.
-2. Get more data, reduce assumptions and include more parameters in CO2 emission estimate to make better forecasting
+1. Include more parameters in CO2 emission estimate to make better forecasting
 
 # Data Sources
 
