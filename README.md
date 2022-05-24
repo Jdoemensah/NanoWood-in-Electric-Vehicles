@@ -58,8 +58,8 @@ Top Ten Vehicle Registrations and CO2 Emissions by county in NYS
 
 As shown in the figure below, the results show that Suffolk county recorded the higest vehicle registrations. Bronx county had the 10th higehst vehicle registrations. On emissions, Suffulk county recorded highest withBronx county in the 10th highest C02 emissions based on this estimates. 
 
-![image](https://user-images.githubusercontent.com/97989922/167980046-b7999b1f-22ec-44d3-b8a0-1e99f8f84e3e.png)
 
+![top_10_highest_VR_C02_1](https://user-images.githubusercontent.com/97989922/170094914-f6d71283-560a-4d20-9172-f5703397b326.png)
 
 
 Heatmap of Emission by County
