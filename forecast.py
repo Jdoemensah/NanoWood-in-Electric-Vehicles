@@ -31,7 +31,7 @@ request = Socrata("data.ny.gov",
 
 #Request data, return as JSON from API / convert to Python list of dictionaries by sodapy
 
-results = request.get("w4pv-hbkt", where ="record_type =='VEH'", limit = 100000)
+results = request.get("w4pv-hbkt", where ="record_type =='VEH'", limit = 13000000)
 
 #Save returned data as pandas dataframe
 
@@ -110,7 +110,7 @@ a = 0
 for v in veh['county']:
     if v == 'OUT-OF-STATE':
         a = a + 1
-print(a)
+print(f' Total No of Cars Registered by Residents from Out-Of-State: \n{a}')
 # 627 cars registered by folks from out of state
 
 
@@ -120,7 +120,8 @@ veh = veh[in_state]
 
 print(len(veh['county'].value_counts()))
 
-                       
+print(f'Total No. of Registered Gasoline Vechiles in NYS: \n{len(veh)}')
+
 #%%Finally, Group car registration by county, and into dataframe
 
 grouped = veh.groupby(['county'])
@@ -255,33 +256,90 @@ all_data.to_file("counties1.gpkg",layer="all_data",index=False)
 
 #%%Plot some visualizations
 #create top 10 counties with higest registrations:
-top_registrations = both.sort_values(by=['No_of_Vehicles'],ascending=False).iloc[0:10]
+top_10_highest_registrations = both.sort_values(by=['No_of_Vehicles'],ascending=False).iloc[0:10]
 
+#lowest vehicle registrations
+top_10_lowest_registrations = both.sort_values(by=['No_of_Vehicles'],ascending=True).iloc[0:10]
 
 #get top emissions
-top_emissions = both.sort_values(by=['CO2_1'],ascending=False).iloc[0:10]
+top_10_highest_emissions = both.sort_values(by=['CO2_1'],ascending=False).iloc[0:10]
+
+top_10_lowest_emissions = both.sort_values(by=['CO2_1'],ascending=True).iloc[0:10]
 
 
+#get top vehicles miles travelled
+top_10_highest_vehicle_miles_traveled = both.sort_values(by=['VMT/1000'],ascending=False).iloc[0:10]
+top_10_lowest_vehicle_miles_traveled = both.sort_values(by=['VMT/1000'],ascending=True).iloc[0:10]
 
 #%%Plot top 10 counties with vehicle registration and highest emissions  
 
-top_registrations.reset_index(inplace=True)
-top_emissions.reset_index(inplace=True)
+top_10_highest_registrations.reset_index(inplace=True)
+top_10_highest_emissions.reset_index(inplace=True)
 
+top_10_lowest_registrations.reset_index(inplace=True)
+top_10_lowest_emissions.reset_index(inplace=True)
+
+top_10_lowest_vehicle_miles_traveled.reset_index(inplace=True)
+top_10_highest_vehicle_miles_traveled.reset_index(inplace=True)
 
 #%% plot top ten counties with higest emissions and registrations in business as usual mode
 #county_order=list(top_registrations['county'])
 fig, (ax1,ax2) = plt.subplots(1,2,dpi=300,figsize=[20,12])
-fig.suptitle("Top 10 Vehicle Registrations and CO2 Emissions")
-sns.barplot(x='county',y='No_of_Vehicles',data=top_registrations,ax=ax1) #order=
+fig.suptitle("Top Ten Counties With Highest Vehicle Registrations and CO2 Emissions in NYS")
+sns.barplot(x='county',y='No_of_Vehicles',data=top_10_highest_registrations,ax=ax1) #order=
            # ['NASSAU','SUFFOLK','QUEENS','WESTCHESTER','KINGS','ERIE','MUNROE','NEW YORK','RICHMOND','BRONX'])
-sns.barplot(x='county',y='CO2_1',data=top_emissions,ax=ax2)
+sns.barplot(x='county',y='CO2_1',data=top_10_highest_emissions,ax=ax2)
             #['SUFFOLK','NASSAU','QUEENS','WESTCHESTER','ERIE','KINGS','MUNROE','ONONDAGA','NEW YORK','ORANGE'])
-ax2.set_xlabel("Counties")
+ax2.set_xlabel("County")
+ax1.set_ylabel("Vehicle Registrations in MILLIONS)")
+ax2.set_ylabel("C02 Emissions")
 fig.tight_layout()
-fig.savefig("top_10.png")
+fig.savefig("top_10_highest_VR_C02_1.png")
 
-#%%E.N.D
-=======
-#62 COUNTIES RECORDED. 
->>>>>>> 4d50498a733b50d37502f1bd6ff17221c41369f2
+
+#%% plot lowest ten counties with lowest emissions and registrations in business as usual mode
+#county_order=list(top_registrations['county'])
+fig, (ax1,ax2) = plt.subplots(1,2,dpi=300,figsize=[20,12])
+fig.suptitle("Top Ten Counties with Lowest Vehicle Registrations and CO2 Emissions in NYS")
+sns.barplot(x='county',y='No_of_Vehicles',data=top_10_lowest_registrations,ax=ax1) #order=
+           # ['NASSAU','SUFFOLK','QUEENS','WESTCHESTER','KINGS','ERIE','MUNROE','NEW YORK','RICHMOND','BRONX'])
+sns.barplot(x='county',y='CO2_1',data=top_10_lowest_emissions,ax=ax2)
+            #['SUFFOLK','NASSAU','QUEENS','WESTCHESTER','ERIE','KINGS','MUNROE','ONONDAGA','NEW YORK','ORANGE'])
+ax2.set_xlabel("County")
+ax1.set_ylabel("Vehicle Registrations (MILLIONS)")
+ax2.set_ylabel("C02 Emissions")
+fig.tight_layout()
+fig.savefig("top_10_lowest_VR_C02_1.png")
+
+#%% plot top ten counties with highest registrations and vehicle miles travelled
+
+#county_order=list(top_registrations['county'])
+fig, (ax1,ax2) = plt.subplots(1,2,dpi=300,figsize=[20,12])
+fig.suptitle("Top Ten Counties with Highest Vehicle Miles Travelled and Vehicle Registrations NYS")
+sns.barplot(x='county',y='VMT/1000',data=top_10_highest_vehicle_miles_traveled,ax=ax1) #order=
+           # ['NASSAU','SUFFOLK','QUEENS','WESTCHESTER','KINGS','ERIE','MUNROE','NEW YORK','RICHMOND','BRONX'])
+sns.barplot(x='county',y='No_of_Vehicles',data=top_10_highest_registrations,ax=ax2)
+            #['SUFFOLK','NASSAU','QUEENS','WESTCHESTER','ERIE','KINGS','MUNROE','ONONDAGA','NEW YORK','ORANGE'])
+ax2.set_xlabel("County")
+ax1.set_ylabel("Vehicle Miles Traveled (x1000 MILES)")
+ax2.set_ylabel("Vehicle Registrations (MILLIONS)")
+fig.tight_layout()
+fig.savefig("top_10_highest_VMT_VR.png")
+
+
+#%% plot top ten counties with highest registrations and vehicle miles travelled
+
+#county_order=list(top_registrations['county'])
+fig, (ax1,ax2) = plt.subplots(1,2,dpi=300,figsize=[20,12])
+fig.suptitle("Top Ten Counties with Lowest Vehicle Miles Travelled and Vehicle Registrations NYS")
+sns.barplot(x='county',y='VMT/1000',data=top_10_lowest_vehicle_miles_traveled,ax=ax1) #order=
+           # ['NASSAU','SUFFOLK','QUEENS','WESTCHESTER','KINGS','ERIE','MUNROE','NEW YORK','RICHMOND','BRONX'])
+sns.barplot(x='county',y='No_of_Vehicles',data=top_10_lowest_registrations,ax=ax2)
+            #['SUFFOLK','NASSAU','QUEENS','WESTCHESTER','ERIE','KINGS','MUNROE','ONONDAGA','NEW YORK','ORANGE'])
+ax2.set_xlabel("County")
+ax1.set_ylabel("Vehicle Miles Traveled (x1000 MILES)")
+ax2.set_ylabel("Vehicle Registrations (MILLIONS)")
+fig.tight_layout()
+fig.savefig("top_10_lowest_VMT_VR.png")
+#%% E. N. D
+
